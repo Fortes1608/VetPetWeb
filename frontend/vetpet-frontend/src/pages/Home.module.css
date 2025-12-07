@@ -1,0 +1,100 @@
+.pageContainer {
+  padding-top: 80px; 
+  min-height: calc(100vh - 80px); 
+  background-color: #f9fafb; 
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+}
+
+/* Centraliza o conteúdo principal, alinhando com a Navbar */
+.mainContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* Seção do Título */
+.hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.heroTitle {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.heroTitle span {
+  /* MUDANÇA: Amarelo mais escuro para legibilidade */
+  color: #B8A900;
+}
+
+.heroSubtitle {
+  font-size: 18px;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* O Grid que segura os cartões */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Estilo de cada Cartão */
+.card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito moderno ao passar o mouse */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+  /* MUDANÇA: Borda com o seu amarelo exato! */
+  border-color: #FEEC02;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* MUDANÇA: Adicione este bloco para colorir os ícones */
+.cardTitle svg {
+  color: #B8A900;
+  flex-shrink: 0; /* Impede o ícone de encolher */
+}
+
+.cardDescription {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+
+/* Rodapé */
+.footer {
+  margin-top: 48px;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+  border-top: 1px solid #e5e7eb;
+}
